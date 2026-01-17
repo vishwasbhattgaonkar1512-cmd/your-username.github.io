@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vishwas Vijay Bhattgaonkar — AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accentBlue: '#4fb3ff',
+            accentGreen: '#20e0a6',
+            accentOrange: '#ff8c54',
+            accentPink: '#ff5aa8',
+            accentRed: '#ff475f'
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <main class="layout">
+    <aside class="panel-left" aria-label="Profile and contacts">
+      <div class="left-inner">
+        <div class="profile-frame">
+          <img src="assets/vishwas.jpeg" alt="Vishwas Vijay Bhattgaonkar" class="profile-img">
+          <span class="frame-outline" aria-hidden="true"></span>
+        </div>
+
+        <h1 class="name">Vishwas Vijay Bhattgaonkar</h1>
+        <p class="big-title">ASPIRING AI ENGINEER | BUILDER | INNOVATOR</p>
+        <p class="subline">Ready-Future Engineer building intelligent systems</p>
+
+        <div class="contact-list">
+          <a href="mailto:vishwasbhattgaonkar1512@gmail.com">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden focusable="false"><path d="M2 6.5v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 6.5L12 13 2 6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            vishwasbhattgaonkar1512@gmail.com
+          </a>
+          <a href="https://github.com/vishwasbhattgaonkar1512-cmd" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden focusable="false"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 1.7.8 2.1 1.2.1-.9.4-1.5.8-1.9-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.2a11.6 11.6 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.7.2 3 .1 3.3.8.9 1.2 2 1.2 3.2 0 4.6-2.7 5.6-5.3 5.9.5.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z" fill="currentColor"></path></svg>
+            github.com/vishwasbhattgaonkar1512-cmd
+          </a>
+          <a href="https://www.linkedin.com/in/vishwas-vijay-bhattgaonkar-a1ba77368" target="_blank">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden focusable="false"><path d="M4.5 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM3 8.5h3v12H3zM9 8.5h2.8v1.6h.1c.4-.8 1.6-1.6 3.3-1.6 3.5 0 4.2 2.3 4.2 5.3v6.7h-3V15c0-1.6 0-3.6-2.2-3.6-2.2 0-2.6 1.8-2.6 3.5v6.1H9z" fill="currentColor"></path></svg>
+            linkedin.com/in/vishwas-vijay-bhattgaonkar-a1ba77368
+          </a>
+          <span>Location: Maharashtra, India</span>
+        </div>
+
+        <div class="highlights">
+          <h4>Highlights</h4>
+          <ul>
+            <li><strong>Tata Crucible Campus Quiz 2025</strong> — Prelims Level 1</li>
+            <li><strong>ICAT</strong> — Internship Common Aptitude Test</li>
+            <li><strong>Ethical Hacking & Cybersecurity workshop</strong> — Reconnaissance, Scanning, Web Vulnerabilities</li>
+            <li><strong>Cisco Networking Academy</strong> — Intro to Cybersecurity</li>
+            <li><strong>AI Tools & ChatGPT (be10x)</strong> — Certified</li>
+          </ul>
+        </div>
+
+        <div class="left-cta">
+          <a class="btn primary" href="resume.html" target="_blank">Download Resume</a>
+        </div>
+      </div>
+    </aside>
+
+    <section class="panel-right">
+      <div class="container">
+        <!-- Tab navigation for About / Skills / Projects -->
+        <div class="tabs" role="tablist" aria-label="Main tabs">
+          <button class="tab-btn is-active" role="tab" aria-selected="true" data-target="tab-about">About</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-target="tab-skills">Skills</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-target="tab-projects">Featured Projects</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-target="tab-contact">Contact</button>
+        </div>
+
+        <div class="tab-panel" id="tab-about" role="tabpanel">
+          <section id="intro" class="card reveal">
+            <h2>Profile Summary</h2>
+            <p>Motivated and passionate Computer Science engineering student specializing in Artificial Intelligence and Machine Learning. Experienced in building real-world systems including IoT-based GPS tracking and responsive web applications. Strong believer in learning by building, with a clear vision to engineer intelligent, scalable solutions that create impact.</p>
+          </section>
+        </div>
+
+        <div class="tab-panel" id="tab-skills" role="tabpanel" hidden>
+          <section id="skills" class="card reveal">
+            <h2>Skills</h2>
+            <div class="skills-visual">
+            <div class="skill-col">
+              <div class="skill-card">
+                <h3>Programming</h3>
+                <div class="skill-list">
+                  <div class="skill"><span>C, C++</span><div class="bar" data-value="85"></div></div>
+                  <div class="skill"><span>Python</span><div class="bar" data-value="88"></div></div>
+                  <div class="skill"><span>JavaScript</span><div class="bar" data-value="78"></div></div>
+                </div>
+            <!-- Extended technical capabilities integrated into Skills tab -->
+            <div class="cap-grid" style="margin-top:18px">
+              <div>
+                <h4>Core Technical Skills</h4>
+                <ul>
+                  <li>Threat analysis & basic threat modeling; secure coding awareness</li>
+                  <li>Big Data: Apache Spark, Dask, Hadoop — scalable data processing</li>
+                  <li>Deep Learning fundamentals; TensorFlow & PyTorch exposure</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4>Backend & API</h4>
+                <ul>
+                  <li>RESTful API design, secure request handling, modular services</li>
+                  <li>Advanced Java, Spring Framework, Servlets, Hibernate/ORM</li>
+                  <li>OOP best practices and maintainable architecture</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4>Database & Data</h4>
+                <ul>
+                  <li>Oracle SQL & APEX, query optimization, schema design</li>
+                  <li>Designing scalable data pipelines and ETL flows</li>
+                </ul>
+              </div>
+            </div>
+              </div>
+
+              <div class="skill-card">
+                <h3>Web</h3>
+                <div class="skill-list">
+                  <div class="skill"><span>HTML5</span><div class="bar" data-value="92"></div></div>
+                  <div class="skill"><span>CSS3</span><div class="bar" data-value="90"></div></div>
+                  <div class="skill"><span>JavaScript</span><div class="bar" data-value="78"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-col">
+              <div class="skill-card">
+                <h3>AI / ML</h3>
+                <div class="skill-list">
+                  <div class="skill"><span>Machine Learning fundamentals</span><div class="bar" data-value="75"></div></div>
+                  <div class="skill"><span>AI concepts & applications</span><div class="bar" data-value="72"></div></div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <h3>IoT & Tools</h3>
+                <div class="skill-list">
+                  <div class="skill"><span>Arduino Nano • Neo-6M • SIM800L</span><div class="bar" data-value="80"></div></div>
+                  <div class="skill"><span>Git • VS Code • Arduino IDE</span><div class="bar" data-value="86"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+          <!-- Scatter chart view of skill progress -->
+          <div id="skill-scatter" class="skill-scatter" style="margin-top:18px">
+            <h3 style="margin:0 0 10px;font-size:14px;color:var(--muted)">Skill Progress — Scatter View</h3>
+            <div class="scatter-container" aria-hidden="false"></div>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="tab-projects" role="tabpanel" hidden>
+          <section id="projects" class="card reveal">
+            <h2>Experience & Projects</h2>
+            <div class="project-list">
+              <article class="project">
+                <h3>NOVA — NextGen Optimized Virtual Assistant</h3>
+                <p class="muted role">Flagship AI / NLP Project</p>
+                <p>AI-powered virtual assistant for productivity and automation. Modular architecture with NLP-driven intent handling, task automation pipelines, and performance optimizations for real-world usability and scale.</p>
+              </article>
+
+              <article class="project">
+                <h3>AIsmartAdvisory</h3>
+                <p class="muted role">Applied AI / Recommendation System</p>
+                <p>AI-driven advisory system delivering intelligent recommendations and decision support. Uses ML pipelines for feature engineering, model evaluation, and interpretability-aware outputs for end users.</p>
+              </article>
+
+              <article class="project">
+                <h3>SecuraX — Login System</h3>
+                <p class="muted role">Security-focused Backend</p>
+                <p>Secure authentication and login monitoring platform that tracks login attempts, enforces rate-limiting, and provides alerting and visualization for anomalous activity. Designed with secure coding patterns and auditability.</p>
+              </article>
+
+              <article class="project">
+                <h3>Amazon-Prime-EDA-Vishwas</h3>
+                <p class="muted role">Data Analytics / EDA</p>
+                <p>Exploratory Data Analysis on Amazon Prime dataset: data cleaning, preprocessing, visualization, and insight extraction to inform content and engagement strategies.</p>
+              </article>
+
+              <article class="project">
+                <h3>Brain Test Game</h3>
+                <p class="muted role">Interactive Game — Logic & UI</p>
+                <p>Logic-based interactive game focused on cognitive skills and problem solving. Demonstrates efficient game logic, event handling, and a clean, responsive UI for engagement.</p>
+              </article>
+            </div>
+            </div>
+
+            <!-- Projects list below (visualizations removed per request) -->
+          </section>
+        </div>
+
+        <div class="tab-panel" id="tab-contact" role="tabpanel" hidden>
+          <section id="contact" class="card reveal">
+            <h2>Contact</h2>
+            <p class="muted">I'm open to opportunities and collaborations — reach out via any of the channels below.</p>
+            <div class="contact-links" style="margin-top:12px;display:flex;flex-direction:column;gap:10px">
+              <a class="contact-highlight" href="mailto:vishwasbhattgaonkar1512@gmail.com">Email — vishwasbhattgaonkar1512@gmail.com</a>
+              <a class="contact-highlight" href="https://github.com/vishwasbhattgaonkar1512-cmd" target="_blank" rel="noopener">GitHub — github.com/vishwasbhattgaonkar1512-cmd</a>
+              <a class="contact-highlight" href="https://www.linkedin.com/in/vishwas-vijay-bhattgaonkar-a1ba77368" target="_blank" rel="noopener">LinkedIn — linkedin.com/in/vishwas-vijay-bhattgaonkar-a1ba77368</a>
+            </div>
+          </section>
+        </div>
+
+        <section id="education" class="card reveal">
+          <h2>Education</h2>
+          <p>Bachelor of Engineering – Computer Science & Engineering (AI & ML)</p>
+          <p class="muted">Expected Graduation: May 2027</p>
+        </section>
+
+        
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Vishwas Vijay Bhattgaonkar — Built for industry readiness.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

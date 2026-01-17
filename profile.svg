@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+  <defs>
+    <linearGradient id="gradA" x1="0" x2="1">
+      <stop offset="0" stop-color="#1b3a66"/>
+      <stop offset="1" stop-color="#082033"/>
+    </linearGradient>
+    <linearGradient id="outline" x1="0" x2="1">
+      <stop offset="0" stop-color="#4fb3ff"/>
+      <stop offset="1" stop-color="#20e0c9"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="640" rx="40" fill="#071224"/>
+  <g transform="translate(60,60)">
+    <rect width="520" height="520" rx="28" fill="url(#gradA)"/>
+    <g transform="translate(40,40)">
+      <rect width="440" height="440" rx="18" fill="#0e1e2b" />
+      <rect x="24" y="24" width="392" height="392" rx="12" fill="#0f2636" />
+      <rect x="36" y="36" width="368" height="240" rx="10" fill="#0b1622" />
+      <rect x="36" y="296" width="368" height="92" rx="10" fill="#08121a" />
+      <text x="200" y="160" font-family="Poppins, Inter, sans-serif" font-size="84" fill="#4fb3ff" text-anchor="middle" alignment-baseline="middle">VVB</text>
+    </g>
+  </g>
+</svg>

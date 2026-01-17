@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume — Vishwas Vijay Bhattgaonkar</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accentBlue: '#4fb3ff',
+            accentGreen: '#20e0a6',
+            accentOrange: '#ff8c54',
+            accentPink: '#ff5aa8'
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{--bg:#071224;--accent:#4fb3ff;--accent-2:#20e0c9;--muted:#8fa0b6}
+    html,body{height:100%;margin:0;background:var(--bg);color:#eaf2fb;font-family:Inter,Arial,Helvetica,sans-serif}
+    .paper{max-width:900px;margin:28px auto;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:12px;padding:26px;box-shadow:0 12px 40px rgba(2,6,23,0.6);}
+    .head{display:flex;gap:20px;align-items:center}
+    .photo{width:120px;height:120px;border-radius:12px;overflow:hidden;flex:0 0 120px}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .head-info{flex:1}
+    h1{margin:0;font-family:Poppins,Inter;font-weight:800;letter-spacing:0.6px;font-size:20px;color:var(--accent)}
+    .title{margin:6px 0;color:#cfeeff;font-weight:700;font-size:12px;letter-spacing:1.8px}
+    .contact{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:13px;margin-top:8px}
+
+    .body-grid{display:grid;grid-template-columns:1fr 340px;gap:22px;margin-top:18px}
+    .col-main{min-width:0}
+    .col-side{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px}
+
+    .section{margin-bottom:16px}
+    h2{font-family:Poppins,Inter;font-size:14px;margin:0 0 8px;color:#dff4ff}
+    p,li{color:#d2e8fb;line-height:1.45}
+    .muted{color:var(--muted)}
+
+    .project{margin-bottom:12px}
+    .role{color:var(--muted);font-weight:600;font-size:13px}
+
+    /* Skill bars in side column */
+    .skills{display:flex;flex-direction:column;gap:10px}
+    .skill{display:flex;flex-direction:column}
+    .skill .label{font-size:13px;color:var(--muted);margin-bottom:6px}
+    .skill .line{background:rgba(255,255,255,0.06);height:10px;border-radius:8px;overflow:hidden}
+    .skill .fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-2));width:0%;transition:width 1s ease}
+
+    .meta-list{display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--muted)}
+
+    .print-btn{display:inline-block;margin-top:8px;padding:8px 12px;border-radius:8px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#041226;text-decoration:none;font-weight:700}
+
+    @media (max-width:880px){
+      .body-grid{grid-template-columns:1fr;}
+      .col-side{order:2}
+      .photo{width:96px;height:96px}
+    }
+
+    @media print{
+      body{background:#fff;color:#000}
+      .paper{box-shadow:none;border-radius:0;padding:12px}
+      .col-side{background:transparent}
+      .print-btn{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="paper">
+    <div class="head">
+      <div class="photo"><img src="assets/vishwas.jpeg" alt="Vishwas Vijay Bhattgaonkar"></div>
+      <div class="head-info">
+        <h1>Vishwas Vijay Bhattgaonkar</h1>
+        <div class="title">AI/ML Engineer | Builder | Innovator</div>
+        <div class="contact">
+          <div><strong>Email:</strong> vishwasbhattgaonkar1512@gmail.com</div>
+          <div><strong>Location:</strong> Maharashtra, India</div>
+          <div><strong>GitHub:</strong> github.com/vishwasbhattgaonkar1512-cmd</div>
+        </div>
+      </div>
+      <div style="margin-left:auto">
+        <a class="print-btn" href="#" onclick="window.print();return false">Print / Save PDF</a>
+      </div>
+    </div>
+
+    <div class="body-grid">
+      <div class="col-main">
+        <section class="section">
+          <h2>Profile</h2>
+          <p>Motivated and passionate Computer Science engineering student specializing in Artificial Intelligence and Machine Learning. Experienced in building real-world systems including IoT-based GPS tracking and responsive web applications. Strong believer in learning by building, with a clear vision to engineer intelligent, scalable solutions that create impact.</p>
+        </section>
+
+        <section class="section">
+          <h2>Featured Projects</h2>
+          <div class="project">
+            <strong>NOVA — NextGen Optimized Virtual Assistant</strong>
+            <p class="muted">Flagship AI / NLP project focused on productivity automation, intent handling pipelines, and a modular architecture designed for scale.</p>
+          </div>
+
+          <div class="project">
+            <strong>AIsmartAdvisory</strong>
+            <p class="muted">AI-driven advisory and recommendation system with ML pipelines for feature engineering, model evaluation and interpretable recommendations.</p>
+          </div>
+
+          <div class="project">
+            <strong>SecuraX — Login System</strong>
+            <p class="muted">Security-focused authentication system with login-attempt tracking, threat-awareness instrumentation, and secure credential handling practices.</p>
+          </div>
+
+          <div class="project">
+            <strong>Amazon-Prime-EDA-Vishwas</strong>
+            <p class="muted">Exploratory Data Analysis on Amazon Prime dataset: data cleaning, preprocessing, visualization, and actionable insight extraction.</p>
+          </div>
+
+          <div class="project">
+            <strong>Brain Test Game</strong>
+            <p class="muted">Interactive logic-based game emphasizing efficient algorithms, event handling, and a clean UI to test cognitive skills and engagement.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Technical Capabilities</h2>
+          <div class="tech-grid">
+            <div>
+              <h4>Core Technical Skills</h4>
+              <ul>
+                <li>Threat Analysis, basic threat modeling, secure coding awareness</li>
+                <li>Big Data: Apache Spark, Dask, Hadoop</li>
+                <li>Deep Learning fundamentals; TensorFlow & PyTorch exposure</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4>Backend & API</h4>
+              <ul>
+                <li>RESTful API design, secure request handling, modular services</li>
+                <li>Advanced Java, Spring, Servlets, Hibernate/ORM</li>
+                <li>OOP, clean class design and maintainable architectures</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4>Database & Data</h4>
+              <ul>
+                <li>Oracle SQL, APEX, schema design and query optimization</li>
+                <li>Designing scalable data pipelines and ETL flows</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Experience & Projects</h2>
+          <div class="project">
+            <div style="display:flex;justify-content:space-between;align-items:center"><strong>Arduino-Based GPS Tracker System</strong><span class="role">IoT Developer & System Designer</span></div>
+            <p class="muted">Designed and implemented a real-time GPS tracking system using Arduino Nano, Neo-6M GPS, and SIM800L GSM modules. Enabled live location sharing via SMS. Gained hands-on hardware integration and microcontroller programming experience.</p>
+          </div>
+
+          <div class="project">
+            <div style="display:flex;justify-content:space-between;align-items:center"><strong>Amazon Clone Website</strong><span class="role">Frontend Web Developer</span></div>
+            <p class="muted">Built a responsive Amazon-style UI with structured layouts, navigation, and product components using HTML, CSS, and JavaScript. Focused on clean UI/UX and component-based structure for reusability.</p>
+          </div>
+
+          <div class="project">
+            <div style="display:flex;justify-content:space-between;align-items:center"><strong>Competitions & Credentials</strong><span class="role">Tata Crucible • ICAT • Cybersecurity</span></div>
+            <p class="muted">Participated in Tata Crucible Campus Quiz 2025 (Prelims), appeared for ICAT, completed Ethical Hacking & Cisco Intro to Cybersecurity — demonstrating analytical strength and security foundations.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Education</h2>
+          <p><strong>Bachelor of Engineering – Computer Science & Engineering (AI & ML)</strong></p>
+          <p class="muted">Expected Graduation: May 2027</p>
+        </section>
+      </div>
+
+      <aside class="col-side">
+        <section class="section">
+          <h2>Skills</h2>
+          <div class="skills">
+            <div class="skill"><div class="label">Programming — C, C++, Python, JavaScript</div><div class="line"><div class="fill" style="width:86%"></div></div></div>
+            <div class="skill"><div class="label">Web — HTML5, CSS3, JavaScript</div><div class="line"><div class="fill" style="width:90%"></div></div></div>
+            <div class="skill"><div class="label">AI / ML — Machine Learning fundamentals</div><div class="line"><div class="fill" style="width:75%"></div></div></div>
+            <div class="skill"><div class="label">IoT — Arduino Nano, Neo-6M, SIM800L</div><div class="line"><div class="fill" style="width:80%"></div></div></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Tools & Workflow</h2>
+          <div class="meta-list">
+            <div>Git & GitHub</div>
+            <div>VS Code</div>
+            <div>Arduino IDE</div>
+            <div>Responsive web design & prototyping</div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Activities</h2>
+          <p class="muted">Project Presenter & Volunteer – National Science Day & Pi Day 2025</p>
+        </section>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
